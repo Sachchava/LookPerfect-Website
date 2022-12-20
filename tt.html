@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Jost:wght@200&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+        * {
+            margin: 0;
+            border: 0;
+            padding: 0;
+        }
+
+        html {
+            background-color: black;
+            color: white;
+            scroll-behavior:smooth;
+        }
+
+        fieldset {
+            border: 2px solid white;
+        }
+
+        a {
+            cursor: pointer;
+        }
+
+        .a1 {
+            top: 5%;
+            position: absolute;
+            left: 5%;
+        }
+
+        .a1h1 {
+            position: fixed;
+            font-family: dancing script;
+            font-weight: 200;
+            font-size: 3em;
+        }
+
+        .a1h3 {
+            position: fixed;
+            top: 13%;
+            font-family: kaushan script;
+            font-weight: 100;
+            font-size: 1.2em;
+            letter-spacing: 0.3px;
+        }
+
+        .a5a {
+            position: fixed;
+            top: 20%;
+            left: 5%;
+        }
+
+        .a51l {
+            font-family: monTSERraT;
+            font-weight: 700;
+            font-size: 2em;
+        }
+
+        .a511 {
+            margin: 1em;
+            transition: 0.4s ease-in-out;
+            border-radius: 24px;
+            padding: 0.5em;
+        }
+
+        .a511:hover {
+            color: black;
+            background-color: white;
+            font-weight: 500;
+        }
+
+        .a511a {
+            margin-left: 0.8em;
+            cursor: pointer;
+            font-family: raleway;
+            font-size: 2em;
+        }
+
+        .a512 {
+            margin: 1em;
+            transition: 0.4s ease-in-out;
+            border-radius: 24px;
+            padding: 0.5em;
+        }
+
+        .a512:hover {
+            color: black;
+            background-color: white;
+            font-weight: 500;
+        }
+
+        .a512a {
+            margin-left: 0.8em;
+            cursor: pointer;
+            font-family: raleway;
+            font-size: 2em;
+        }
+
+        .a513 {
+            margin: 1em;
+            transition: 0.4s ease-in-out;
+            border-radius: 24px;
+            padding: 0.5em;
+        }
+
+        .a513:hover {
+            color: black;
+            background-color: white;
+            font-weight: 500;
+        }
+
+        .a513a {
+            margin-left: 1.5em;
+            cursor: pointer;
+            font-family: raleway;
+            font-size: 2em;
+        }
+
+        .a514 {
+            margin: 1em;
+            transition: 0.4s ease-in-out;
+            border-radius: 24px;
+            padding: 0.5em;
+        }
+
+        .a514:hover {
+            color: black;
+            background-color: white;
+            font-weight: 500;
+        }
+
+        .a514a {
+            margin-left: 1.2em;
+            cursor: pointer;
+            font-family: raleway;
+            font-size: 2em;
+        }
+
+        .a515 {
+            margin: 1em;
+            transition: 0.4s ease-in-out;
+            border-radius: 24px;
+            padding: 0.5em;
+        }
+
+        .a515:hover {
+            color: black;
+            background-color: white;
+            font-weight: 500;
+        }
+
+        .a515a {
+            margin-left: 1.8em;
+            cursor: pointer;
+            font-family: raleway;
+            font-size: 2em;
+        }
+
+        .a2 {
+            position: absolute;
+            top: 10%;
+            left: 35%;
+            width: 60%;
+            height: fit-content;
+        }
+
+        .a21l {
+            font-family: monTSERraT;
+            font-weight: 700;
+            font-size: 2em
+        }
+
+        .a211i {
+            margin: 1em;
+        }
+
+        .a211ia {
+            height: 300px;
+            width: 100%;
+        }
+
+        .a211c {
+            margin: 1em;
+        }
+
+        .a211ch1 {
+            font-family: jost;
+        }
+
+        .a211in {
+            margin: 1em;
+            margin-left: 35%;
+            background: white;
+            display: inline-block;
+        }
+
+        .a211in1 {
+            height: 2em;
+            width: 2em;
+            margin-top: 0.3em;
+            margin-right: 0.2em;
+            margin-left: 0.3em;
+        }
+
+        .a211h {
+            display: inline-block;
+        }
+
+        .a211h3 {
+            font-family: jost;
+            font-size: 2em;
+        }
+
+        .a31 {
+            margin-top: 3em;
+        }
+
+        .a31l {
+            font-family: monTSERraT;
+            font-weight: 700;
+            font-size: 2em
+        }
+
+        .a311i {
+            margin: 1em;
+        }
+
+        .a311ia {
+            height: 300px;
+            width: 100%;
+        }
+
+        .a311c {
+            margin: 1em;
+        }
+
+        .a311ch1 {
+            font-family: jost;
+        }
+
+        .a311in {
+            margin: 1em;
+            margin-left: 35%;
+            background: white;
+            display: inline-block;
+        }
+
+        .a311in1 {
+            height: 2em;
+            width: 2em;
+            margin-top: 0.3em;
+            margin-right: 0.2em;
+            margin-left: 0.3em;
+        }
+
+        .a311h {
+            display: inline-block;
+        }
+
+        .a311h3 {
+            font-family: jost;
+            font-size: 2em;
+        }
+
+        .a41 {
+            margin-top: 3em;
+        }
+
+        .a41l {
+            font-family: monTSERraT;
+            font-weight: 700;
+            font-size: 2em
+        }
+
+        .a411i {
+            margin: 1em;
+        }
+
+        .a411ia {
+            height: 300px;
+            width: 100%;
+        }
+
+        .a411c {
+            margin: 1em;
+        }
+
+        .a411ch1 {
+            font-family: jost;
+        }
+
+        .a411in {
+            margin: 1em;
+            margin-left: 35%;
+            background: white;
+            display: inline-block;
+        }
+
+        .a411in1 {
+            height: 2em;
+            width: 2em;
+            margin-top: 0.3em;
+            margin-right: 0.2em;
+            margin-left: 0.3em;
+        }
+
+        .a411h {
+            display: inline-block;
+        }
+
+        .a411h3 {
+            font-family: jost;
+            font-size: 2em;
+        }
+
+        .a61 {
+            margin-top: 3em;
+        }
+
+        .a61l {
+            font-family: monTSERraT;
+            font-weight: 700;
+            font-size: 2em
+        }
+
+        .a611i {
+            margin: 1em;
+        }
+
+        .a611ia {
+            height: 300px;
+            width: 100%;
+        }
+
+        .a611c {
+            margin: 1em;
+        }
+
+        .a611ch1 {
+            font-family: jost;
+        }
+
+        .a611in {
+            margin: 1em;
+            margin-left: 35%;
+            background: white;
+            display: inline-block;
+        }
+
+        .a611in1 {
+            height: 2em;
+            width: 2em;
+            margin-top: 0.3em;
+            margin-right: 0.2em;
+            margin-left: 0.3em;
+        }
+
+        .a611h {
+            display: inline-block;
+        }
+
+        .a611h3 {
+            font-family: jost;
+            font-size: 2em;
+        }
+
+        .a71 {
+            margin-top: 3em;
+            margin-bottom:4em;
+        }
+
+        .a71l {
+            font-family: monTSERraT;
+            font-weight: 700;
+            font-size: 2em
+        }
+
+        .a711i {
+            margin: 1em;
+        }
+
+        .a711ia {
+            height: 300px;
+            width: 100%;
+        }
+
+        .a711c {
+            margin: 1em;
+        }
+
+        .a711ch1 {
+            font-family: jost;
+        }
+
+        .a711in {
+            margin: 1em;
+            margin-left: 35%;
+            background: white;
+            display: inline-block;
+        }
+
+        .a711in1 {
+            height: 2em;
+            width: 2em;
+            margin-top: 0.3em;
+            margin-right: 0.2em;
+            margin-left: 0.3em;
+        }
+
+        .a711h {
+            display: inline-block;
+        }
+
+        .a711h3 {
+            font-family: jost;
+            font-size: 2em;
+        }
+
+        .s {
+            position: fixed;
+            top: 90%;
+            left: 10%;
+        }
+
+        .s1 {
+            position: fixed;
+            top: 90%;
+            left: 5%;
+            width: 24%;
+            border: 2px solid white;
+        }
+
+        .s2 {
+            text-align: center;
+            height: auto;
+
+        }
+
+        .s2a {
+            text-decoration: none;
+            font-family: raleway;
+            font-size: 2em;
+            color: white;
+        }
+
+        .s3 {
+            position: fixed;
+            top: 92.5%;
+            left: 26%;
+        }
+
+        .s3h1 {
+            font-size: 1em;
+            background: linear-gradient(to right, #fff 10%, #000 80%);
+            background-repeat: no-repeat;
+            background-size: 80%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: animate 2s linear infinite;
+        }
+
+        @keyframes animate {
+            0% {
+                background-position: 0 0;
+            }
+
+            70% {
+                background-position: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var mybutton = document.getElementsByClassName("a511a");
+        function topFunction1() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        var mybutton = document.getElementsByClassName("a512a");
+        function topFunction2() {
+            document.body.scrollTop = 700;
+            document.documentElement.scrollTop = 700;
+        }
+        var mybutton = document.getElementsByClassName("a513a");
+        function topFunction3() {
+            document.body.scrollTop = 1350;
+            document.documentElement.scrollTop = 1350;
+        }
+        var mybutton = document.getElementsByClassName("a514a");
+        function topFunction4() {
+            document.body.scrollTop = 2000;
+            document.documentElement.scrollTop = 2000;
+        }
+        var mybutton = document.getElementsByClassName("a515a");
+        function topFunction5() {
+            document.body.scrollTop = 2700;
+            document.documentElement.scrollTop = 2700;
+        }
+      
+    </script>
+    <div class="a1">
+        <h1 class="a1h1">Feel Looks</h1>
+        <h3 class="a1h3">First impression always matters</h3>
+    </div>
+    <div class="a2">
+        <div class="a21">
+            <form>
+                <fieldset>
+                    <legend class="a21l">Stick and Pole</legend>
+                    <div class="a211">
+                        <div class="a211i">
+                            <img src="Stick-and-Poke.jpg" class="a211ia" alt="">
+                        </div>
+                        <div class="a211c">
+                            <h1 class="a211ch1">Artist Slowerblack shows off the possibilities of the stick-n-poke,
+                                where the artist uses a single needle to create simple designs</h1>
+                        </div>
+                        <div class="a211in">
+                            <input class="a211in1" type="checkbox" class="a211in1" name="stick and Pole"
+                                value="stick and Pole">
+                        </div>
+                        <div class="a211h">
+                            <h3 class="a211h3">Stick and Pole</h3>
+                        </div>
+
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="a31">
+            <form>
+                <fieldset>
+                    <legend class="a31l">Black and Grey</legend>
+                    <div class="a311">
+                        <div class="a311i">
+                            <img src="black-and-grey.jpg" class="a311ia" alt="">
+                        </div>
+                        <div class="a311c">
+                            <h1 class="a311ch1">Jessica Mascitti of LA’s East Side Tattoo shows us great examples of
+                                different kinds of work in a genre that can encompass a wide range of styles. </h1>
+                        </div>
+                        <div class="a311in">
+                            <input class="a311in1" type="checkbox" class="a311in1" name="Black and Grey"
+                                value="Black and Grey">
+                        </div>
+                        <div class="a311h">
+                            <h3 class="a311h3">Black and Grey</h3>
+                        </div>
+
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="a41">
+            <form>
+                <fieldset>
+                    <legend class="a41l">Portraiture</legend>
+                    <div class="a411">
+                        <div class="a411i">
+                            <img src="Portraiture.jpg" class="a411ia" alt="">
+                        </div>
+                        <div class="a411c">
+                            <h1 class="a411ch1">Shane O’Neill shows us how realistic you can get with tattoos with his
+                                portraiture, a sub-set of the realism genre. </h1>
+                        </div>
+                        <div class="a411in">
+                            <input class="a411in1" type="checkbox" class="a411in1" name="Portraiture"
+                                value="Portraiture">
+                        </div>
+                        <div class="a411h">
+                            <h3 class="a411h3">Portraiture</h3>
+                        </div>
+
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="a61">
+            <form>
+                <fieldset>
+                    <legend class="a61l">Black Work</legend>
+                    <div class="a611">
+                        <div class="a611i">
+                            <img src="Blackwork.jpg" class="a411ia" alt="">
+                        </div>
+                        <div class="a611c">
+                            <h1 class="a611ch1">Blackwork is a tattoo style originally derived from the original tribal
+                                tattoos, made of thick and bold black lines in a variety of geometric shapes. </h1>
+                        </div>
+                        <div class="a611in">
+                            <input class="a611in1" type="checkbox" class="a611in1" name="Black Work" value="Black Work">
+                        </div>
+                        <div class="a611h">
+                            <h3 class="a611h3">Black Work</h3>
+                        </div>
+
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+        <div class="a71">
+            <form>
+                <fieldset>
+                    <legend class="a71l">Realism</legend>
+                    <div class="a711">
+                        <div class="a711i">
+                            <img src="Surrealism.jpg" class="a711ia" alt="">
+                        </div>
+                        <div class="a711c">
+                            <h1 class="a711ch1">Realistic tattoos can portray anything from scenery or objects to
+                                animals and people. </h1>
+                        </div>
+                        <div class="a711in">
+                            <input class="a711in1" type="checkbox" class="a711in1" name="Realism" value="Realism">
+                        </div>
+                        <div class="a711h">
+                            <h3 class="a711h3">Realism</h3>
+                        </div>
+
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div class="s">
+        <div class="s1">
+            <div class="s2">
+                <a href="experts.html" class="s2a">Select Expert</a>
+            </div>
+        </div>
+        <div class="s3">
+            <h1 class="s3h1">>>></h1>
+        </div>
+    </div>
+    <div class="a5a">
+        <div class="a51">
+            <form>
+                <fieldset>
+                    <legend class="a51l">Our Tattoo Designs </legend>
+                    <div class="a511">
+                        <a onclick="topFunction1()" class="a511a">Stick and Pole</a>
+                    </div>
+
+                    <div class="a512">
+                        <a onclick="topFunction2()" class="a512a">Black and Grey</a>
+                    </div>
+                    <div class="a513">
+                        <a onclick="topFunction3()" class="a513a">Portraiture</a>
+                    </div>
+                    <div class="a514">
+                        <a onclick="topFunction4()" class="a514a">Black Work</a>
+                    </div>
+                    <div class="a515">
+                        <a onclick="topFunction5()" class="a515a">Realism</a>
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Jost:wght@200&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: rgb(0, 0, 0);
+        }
+
+        .h1 {
+            z-index: 2;
+            background-color: black;
+            padding: 0.5em;
+        }
+
+        .h11 {
+         
+            width: 50%;
+            height: 90vh;
+            float: left;
+
+        }
+
+        .h21 {
+            
+            width: 50%;
+            height: 90vh;
+            float: right;
+
+        }
+
+        .h23i1,
+        .h23i2,
+        .h23i3 {
+            position: absolute;
+            top: 14%;
+            right: 4%;
+            padding: 0.5em;
+            height: 80vh;
+            width: 45%;
+
+            border-radius: 70%;
+        }
+
+
+
+        .h3 {
+
+            position: absolute;
+            left:0%;
+            top:0%;
+            font-family: dancing script;
+            font-size: 2rem;
+            display: inline-block;
+            transform: rotate(-45deg);
+        }
+
+        .h3a {
+            z-index: 100;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+           
+        }
+
+        .h4 {
+            font-family: montserrat;
+            font-weight: 600;
+            position: absolute;
+            top: 3%;
+            margin: 0 2% 0 0;
+            right: 5%;
+            font-size: 1.3rem;
+        }
+
+        .h4a {
+            z-index: 100;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+
+        .h5 {
+            font-family: montserrat;
+            font-weight: 600;
+            position: absolute;
+            top: 3%;
+            margin: 0 2% 0 0;
+            right: 15%;
+            font-size: 1.3rem;
+
+        }
+
+        .h5a {
+            z-index: 100;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+
+        }
+
+        .h23 {
+            animation: a 20s linear infinite;
+        }
+
+        .h231 {
+            animation: a1 20s linear infinite;
+        }
+
+        .h232 {
+            animation: a2 20s linear infinite;
+        }
+
+        @keyframes a {
+            0% {
+                visibility: visible;
+            }
+
+            25% {
+                visibility: hidden;
+            }
+
+            50% {
+                visibility: hidden;
+            }
+
+            75% {
+                visibility: hidden;
+            }
+
+            100% {
+                visibility: visible;
+            }
+        }
+
+        @keyframes a1 {
+            0% {
+                visibility: hidden;
+            }
+
+            25% {
+                visibility: hidden;
+            }
+
+            50% {
+                visibility: visible;
+            }
+
+            75% {
+                visibility: visible;
+            }
+
+            100% {
+                visibility: hidden;
+            }
+        }
+
+        @keyframes a2 {
+            0% {
+                visibility: hidden;
+            }
+
+            25% {
+                visibility: hidden;
+            }
+
+            50% {
+                visibility: hidden;
+            }
+
+            75% {
+                visibility: visible;
+            }
+
+            100% {
+                visibility: hidden;
+            }
+        }
+
+        .h12 {
+            position: absolute;
+            top: 22%;
+            left: 5%;
+        }
+
+        .h13 {
+            margiN: 2em 1em 1em 1em;
+        }
+
+
+        .h12h1 {
+            color: #FF00FF;
+            text-align: left;
+            width: 50%;
+            font-size: 2.2em;
+            font-family: eb garamond;
+            FONT-WEIGHT: 100;
+            display: inline-block;
+        }
+
+        .h12h2 {
+            color: white;
+            text-align: left;
+            margin-top: 1em;
+            width: 50%;
+            letter-spacing: 0.6px;
+            font-size: 2em;
+            font-family: jost;
+            FONT-WEIGHT: 400;
+            display: inline-block;
+        }
+
+        .h12h3 {
+            color: transparent;
+            background-image: linear-gradient(to right,
+                    #e6d27a 0%,
+                    #f3e4a3 22%,
+                    #f3e59e 45%,
+                    #f1eeb7 44%,
+                    #f6e27a 55%,
+                    #dfc865 73%,
+                    #c59453 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            margin-top: 1em;
+            text-align: left;
+            font-size: 1.6em;
+            font-weight: 600;
+            font-family: raleway;
+            letter-spacing: 0.6px;
+            width: 50%;
+
+        }
+
+        .h12a {
+            cursor:pointer;
+            text-decoration: none;
+            background-image: linear-gradient(to right,
+                    #e6d27a 0%,
+                    #f3e4a3 22%,
+                    #f3e59e 45%,
+                    #f1eeb7 44%,
+                    #f6e27a 55%,
+                    #dfc865 73%,
+                    #c59453 100%);
+            color: BLACK;
+            border-radius: 25px;
+            padding: 0.5em;
+            font-weight: 600;
+            font-size: 1.6em;
+            margin: 1em;
+            float: left;
+        }
+
+        .y {
+            z-index: 0;
+            position: absolute;
+            top: 100%;
+            width: 100%;
+           
+        }
+
+        .y11 {
+            z-index: -1;
+            float: left;
+            height: 100vh;
+            width: 50%;
+
+        }
+
+        .y12 {
+            z-index: -1;
+            float: left;
+            height: 100vh;
+            width: 50%;
+
+        }
+
+        .y1v1,
+        .y1v2,
+        .y1v3 {
+            position: absolute;
+            top: 23%;
+            left: 5%;
+        }
+
+        .y1v1 {
+            animation: c1 20s linear infinite;
+        }
+
+        .y1v2 {
+            animation: c2 20s linear infinite;
+        }
+
+        .y1v3 {
+            animation: c3 20s linear infinite;
+        }
+
+        @keyframes c1 {
+            0% {
+                visibility: visible;
+            }
+
+            25% {
+                visibility: hidden;
+            }
+
+            50% {
+                visibility: hidden;
+            }
+
+            75% {
+                visibility: hidden;
+            }
+
+            100% {
+                visibility: visible;
+            }
+        }
+
+        @keyframes c2 {
+            0% {
+                visibility: hidden;
+            }
+
+            25% {
+                visibility: hidden;
+            }
+
+            50% {
+                visibility: visible;
+            }
+
+            75% {
+                visibility: visible;
+            }
+
+            100% {
+                visibility: hidden;
+            }
+        }
+
+        @keyframes c3 {
+            0% {
+                visibility: hidden;
+            }
+
+            25% {
+                visibility: hidden;
+            }
+
+            50% {
+                visibility: hidden;
+            }
+
+            75% {
+                visibility: visible;
+            }
+
+            100% {
+                visibility: hidden;
+            }
+        }
+
+
+        .y1v11,
+        .y1v21,
+        .y1v31 {
+            height: 40%;
+            width: 45%;
+            border-radius: 30px;
+        }
+
+        .y2 {
+            padding: 1em;
+            color: white;
+        }
+
+        .y2h1 {
+            margin-top: 3.3em;
+            padding: 1em;
+            border: 1px solid rgb(255, 255, 255);
+            border-top: 0.5px solid rgba(255, 255, 255, 0.473);
+            border-right: 0.5px solid rgba(255, 255, 255, 0.473);
+            border-radius: 30px;
+
+        }
+
+        .y2h11 {
+
+            font-family: raleway;
+        }
+
+        .y2h12 {
+            margin-top: 1em;
+            font-family: montserrat;
+        }
+
+        .y2h1s {
+            font-size: 7em;
+            position: absolute;
+            font-family: eb garamond;
+            top: 6%;
+            right: 2%;
+            font-weight: 600;
+
+            color: rgba(255, 255, 255, 0.05);
+        }
+
+        .y2h2 {
+            margin-top: 1em;
+            padding: 1em;
+            border: 1px solid rgb(255, 255, 255);
+            border-top: 0.5px solid rgba(255, 255, 255, 0.473);
+            border-right: 0.5px solid rgba(255, 255, 255, 0.473);
+            border-radius: 30px;
+
+        }
+
+        .y2h21 {
+
+            font-family: raleway;
+        }
+
+        .y2h22 {
+            margin-top: 1em;
+            font-family: montserrat;
+        }
+
+        .y2h2s {
+            font-size: 7em;
+            position: absolute;
+            font-family: eb garamond;
+            top: 33%;
+            right: 2%;
+            font-weight: 600;
+
+            color: rgba(255, 255, 255, 0.05);
+        }
+
+        .y2h3 {
+            margin-top: 1em;
+            padding: 1em;
+            border: 1px solid rgb(255, 255, 255);
+            border-top: 0.5px solid rgba(255, 255, 255, 0.473);
+            border-right: 0.5px solid rgba(255, 255, 255, 0.473);
+            border-radius: 30px;
+
+        }
+
+        .y2h31 {
+
+            font-family: raleway;
+        }
+
+        .y2h32 {
+            margin-top: 1em;
+            font-family: montserrat;
+        }
+
+        .y2h3s {
+            font-size: 7em;
+            position: absolute;
+            font-family: eb garamond;
+            top: 56%;
+            right: 2%;
+            font-weight: 600;
+
+            color: rgba(255, 255, 255, 0.05);
+        }
+
+        .b {
+            color: rgb(0, 0, 0);
+        }
+        .b2{
+            background:linear-gradient(to bottom,white,rgb(19,19,19))
+        }
+        .b3 {
+            z-index: 0;
+
+            overflow: visible;
+            background-image: linear-gradient(to right,
+                    #e6d27a 0%,
+                    #f3e4a3 22%,
+                    #f3e59e 45%,
+                    #f1eeb7 50%,
+                    #f6e27a 55%,
+                    #dfc865 73%,
+                    #c59453 100%);
+            height: 25vh;
+            width: 55%;
+            border-radius: 30px;
+            border-top: 1px solid rgb(223, 223, 223);
+            border-right: 1px solid rgb(224, 224, 224);
+            border-left: 2px solid white;
+            border-bottom: 2px solid white;
+        }
+
+        .b3h1 {
+            margin-left: 4%;
+            margin-top: 2%;
+            font-size: 2.5em;
+            font-family: raleway;
+        }
+
+        .b3h2 {
+            margin-left: 4%;
+            margin-top: 2%;
+            letter-spacing: -0.5px;
+            font-weight: 600;
+            font-size: 1.7em;
+            font-family: montserrat;
+        }
+
+        .b3a {
+            text-decoration: none;
+            padding: 1em;
+            background-color: black;
+            color: white;
+
+
+            position: absolute;
+            top: 35%;
+            border-radius: 20px;
+            left: 40%;
+
+        }
+
+        .b3a h2 {
+            font-size: 1.7em;
+            font-family: jost;
+            border-bottom: 2px solid white;
+        }
+
+        .b311h21 {
+            color: white;
+            font-family: Grechen Fuemen;
+            font-size: 2.4em;
+            font-weight: 300;
+            position: absolute;
+            left: 60%;
+            top: 10%;
+            opacity: 0;
+        }
+
+        .b3:hover .b311h21 {
+            opacity: 1;
+        }
+
+        .b3i1 {
+            position: absolute;
+            top: 2%;
+            left: 25%;
+            height: 24vh;
+            width: auto;
+            opacity: 0.4;
+        }
+
+        .b311 {
+            width: 90%;
+            height: 30vh;
+            position: absolute;
+            top: 110%;
+            left: 5%;
+        }
+
+
+        .b4 {
+
+
+            background-image: linear-gradient(to right,
+                    #e6d27a 0%,
+                    #f3e4a3 22%,
+                    #f3e59e 45%,
+                    #f1eeb7 50%,
+                    #f6e27a 55%,
+                    #dfc865 73%,
+                    #c59453 100%);
+            height: 25vh;
+            width: 55%;
+            border-radius: 30px;
+            border-top: 1px solid rgb(223, 223, 223);
+            border-right: 1px solid rgb(224, 224, 224);
+            border-left: 2px solid white;
+            border-bottom: 2px solid white;
+        }
+
+        .b411 {
+            width: 90%;
+            height: 30vh;
+            position: absolute;
+            top: 140%;
+            left: 5%;
+        }
+
+        .b4h1 {
+            margin-left: 4%;
+            margin-top: 2%;
+            font-size: 2.5em;
+            font-family: raleway;
+        }
+
+        .b4h2 {
+            margin-left: 4%;
+            margin-top: 2%;
+            letter-spacing: -0.5px;
+            ;
+            font-weight: 600;
+            font-size: 1.7em;
+            font-family: montserrat;
+        }
+
+        .b411h21 {
+            color: white;
+            font-family: Grechen Fuemen;
+            font-size: 2.4em;
+            font-weight: 300;
+            position: absolute;
+            left: 60%;
+            top: 10%;
+            opacity: 0;
+        }
+
+        .b4:hover .b411h21 {
+            opacity: 1;
+        }
+
+        .b4a {
+            text-decoration: none;
+            padding: 1em;
+            background-color: black;
+            color: white;
+
+
+            position: absolute;
+            top: 40%;
+            border-radius: 20px;
+            left: 40%;
+
+        }
+
+        .b4a h2 {
+            font-size: 1.7em;
+            font-family: jost;
+            border-bottom: 2px solid white;
+        }
+
+        .b4i1 {
+            position: absolute;
+            top: 2%;
+            left: 25%;
+            height: 24vh;
+            width: auto;
+            opacity: 0.4;
+        }
+
+        .b5 {
+
+            background-image: linear-gradient(to right,
+                    #e6d27a 0%,
+                    #f3e4a3 22%,
+                    #f3e59e 45%,
+                    #f1eeb7 50%,
+                    #f6e27a 55%,
+                    #dfc865 73%,
+                    #c59453 100%);
+            height: 25vh;
+            width: 55%;
+            border-radius: 30px;
+            border-top: 1px solid rgb(223, 223, 223);
+            border-right: 1px solid rgb(224, 224, 224);
+            border-left: 2px solid white;
+            border-bottom: 2px solid white;
+        }
+
+        .b511 {
+            width: 90%;
+            height: 30vh;
+            position: absolute;
+            top: 170%;
+            left: 5%;
+        }
+
+        .b5h1 {
+            margin-left: 4%;
+            margin-top: 2%;
+            font-size: 2.5em;
+            font-family: raleway;
+        }
+
+        .b5h2 {
+            margin-left: 4%;
+            margin-top: 2%;
+            letter-spacing: -0.5px;
+
+            font-weight: 600;
+            font-size: 1.7em;
+            font-family: montserrat;
+        }
+
+        .b5a {
+            text-decoration: none;
+            padding: 1em;
+            background-color: black;
+            color: white;
+
+
+            position: absolute;
+            top: 40%;
+            border-radius: 20px;
+            left: 40%;
+
+        }
+
+        .b5a h2 {
+            font-size: 1.7em;
+            font-family: jost;
+            border-bottom: 2px solid white;
+        }
+
+        .b5i1 {
+            position: absolute;
+            top: 2%;
+            left: 25%;
+            height: 25vh;
+            width: auto;
+            opacity: 0.4;
+        }
+
+        .b511h21 {
+            color: white;
+            font-family: Grechen Fuemen;
+            font-size: 2.4em;
+            font-weight: 300;
+            position: absolute;
+            left: 60%;
+            top: 10%;
+            opacity: 0;
+        }
+
+        .b5:hover .b511h21 {
+            opacity: 1;
+        }
+        .f{
+            position: absolute;
+            top:300%;
+            width:100%;
+            height:auto;
+            background:linear-gradient(to top,rgb(19, 19, 19),black)
+        }
+        .f1 {
+            float: right;
+            width: 50%;
+            height: auto;
+            
+        }
+        .f11{
+            margin:2em;
+        }
+        .f11h{
+            coloR:white;
+            font-family:montserrat;
+            font-size:2em;
+            border-bottom:2px solid white;
+            margin-left:1em;
+            margin-bottom:1em;
+        }
+        .f111{
+            font-family:jost;
+            font-weight:400;
+            font-size:1.7em;
+            margin-left:1em;
+        }
+        .f111a{
+            text-decoration:none;
+            color:white;
+        }
+        .f2 {
+            float: left;
+            width: 50%;
+            height: auto;
+        }
+        .f21{
+            margin:2em;
+        }
+        .f211h1{
+            color:white;
+            font-family:dancing script;
+            font-size:6em;
+            font-weight:200;
+            margin-left: 0.2em;
+        }
+        .f211h3{
+            color:white;
+            font-family: 'Kaushan Script', cursive;
+            font-weight:50;
+            font-size:2em;
+            margin-left: 2em;
+        }
+        .fa-facebook-f{
+            color:transparent;
+            margin-left:1em;
+            font-size:3em;
+            background-image: linear-gradient(to right,
+                    #e6d27a 0%,
+                    #f3e4a3 22%,
+                    #f3e59e 45%,
+                    #f1eeb7 50%,
+                    #f6e27a 55%,
+                    #dfc865 73%,
+                    #c59453 100%);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+        }
+        .fa-instagram{
+            color:transparent;
+            margin:1em;
+            font-size:3em;
+            background-image: linear-gradient(to right,
+                    #e6d27a 0%,
+                    #f3e4a3 22%,
+                    #f3e59e 45%,
+                    #f1eeb7 50%,
+                    #f6e27a 55%,
+                    #dfc865 73%,
+                    #c59453 100%);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+        }
+        .fa-twitter{
+            color:transparent;
+          
+            font-size:3em;
+            background-image: linear-gradient(to right,
+                    #e6d27a 0%,
+                    #f3e4a3 22%,
+                    #f3e59e 45%,
+                    #f1eeb7 50%,
+                    #f6e27a 55%,
+                    #dfc865 73%,
+                    #c59453 100%);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+        }
+        .fa-linkedin-in{
+            color:transparent;
+            margin:1em;
+            font-size:3em;
+            background-image: linear-gradient(to right,
+                    #e6d27a 0%,
+                    #f3e4a3 22%,
+                    #f3e59e 45%,
+                    #f1eeb7 50%,
+                    #f6e27a 55%,
+                    #dfc865 73%,
+                    #c59453 100%);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+        }
+        .h3ah3{
+            color:white;
+            font-size:0.5em;
+            font-family:kaushan script;
+            font-weight:100;
+        }
+        .bor1{
+            height: 570px;
+            width:660px;
+            position: absolute;
+            right:1%;
+            top:8%;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div class="h">
+        <div class="h1">
+            <div class="h2">
+                <div class="h3">
+                 
+                    <a href="#" class="h3a">
+                        Feel Looks
+                    </a>
+                    <h3 class="h3ah3">First impression always matters</h3>
+                </div>
+                <div class="h4">
+                    <a href="#" class="h4a">Login</a>
+                </div>
+                <div class="h5">
+                    <a href="#" class="h5a">Register as Expert</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="h11">
+        <div class="h12">
+            <h1 class="h12h1">Tired of visiting and waiting in Beauty parlors,salons and Tattoo studios for your turn?.
+            </h1>
+            <h2 class="h12h2">Don't worry we'll provide the Beauticians, Barbers and Tattoo artists at your Home.</h2>
+            <h3 class="h12h3">Our Company hired Experts to give you Bestservice at your Home.</h3>
+
+            <a  onclick="topFunction()"  class="h12a">Book your Service</a>
+        </div>
+    </div>
+    <div class="h21">
+        <div class="h22">
+           
+            <div class="h23">
+                <img src="tattoo.jpg" alt="" class="h23i1">
+            </div>
+            <div class="h231">
+                <img src="m11.jpg" alt="" class="h23i2">
+            </div>
+            <div class="h232">
+                <img src="hair.jpg" alt="" class="h23i3">
+            </div>
+        </div>
+    </div>
+    <div class="border1">
+        <img class = "bor1" src="b4.png" alt="">
+    </div>
+    <div class="y">
+        <div class="y11">
+            <div class="y1">
+                <div class="y1v1">
+                    <video class="y1v11" autoplay loop>
+                        <source src="m1.mp4" type="video/mp4">
+
+                    </video>
+                </div>
+                <div class="y1v2">
+                    <video class="y1v21" autoplay loop>
+                        <source src="tattoo1.mp4" type="video/mp4">
+
+                    </video>
+                </div>
+                <div class="y1v3">
+                    <video class="y1v31" autoplay loop>
+                        <source src="hair1.mp4" type="video/mp4">
+
+                    </video>
+                </div>
+            </div>
+
+        </div>
+        <div class="y12">
+            <div class="y2">
+                <div class="y2h1">
+                    <span class="y2h1s">01</span>
+                    <h1 class="y2h11">
+                        Professional
+                    </h1>
+                    <h2 class="y2h12">
+                        a necessitatibus? Minima quidem ad, in itaque animi quibusdam tempora?
+                    </h2>
+                </div>
+                <div class="y2h2">
+                    <span class="y2h2s">02</span>
+                    <h1 class="y2h21">
+                        Experienced
+                    </h1>
+                    <h2 class="y2h22">
+                        ctio dolor nostrum tempora rerum.
+                    </h2>
+                </div>
+                <div class="y2h3">
+                    <span class="y2h3s">03</span>
+                    <h1 class="y2h31">
+                        Skilled
+                    </h1>
+                    <h2 class="y2h32">
+                        eos consequatur totam tenetur ducimus?
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="b">
+            <div class="b1">
+                <div class="b2">
+                    <div class="b311">
+                        <div class="b3">
+                            <h1 class="b3h1">
+                                Book a Beauty Expert
+                            </h1>
+                            <h2 class="b3h2">
+                                Beauticain will provid all beauty<br> services at your home
+                            </h2>
+                            <h2 class="b311h21">Get ready to have a Glamour on your face</h2>
+                            <a href="pt.html" class="b3a">
+                                <h2>Book Now</h2>
+                            </a>
+                            <img src="parlor1.png" alt="" class="b3i1">
+                        </div>
+
+
+                    </div>
+                    <div class="b411">
+                        <div class="b4">
+                            <h1 class="b4h1">
+                                Book a Tattoo expert
+                            </h1>
+                            <h2 class="b4h2">
+                                Experts will visit your <br>home for your service
+                            </h2>
+                            <h2 class="b411h21">Get ready to have a beautifull Mark</h2>
+                            <a href="tt.html" class="b4a">
+                                <h2>Book Now</h2>
+                            </a>
+                            <img src="tattoo11.png" alt="" class="b4i1">
+                        </div>
+                    </div>
+                    <div class="b511">
+                        <div class="b5">
+                            <h1 class="b5h1">
+                                Book an expert Barber
+                            </h1>
+                            <h2 class="b5h2">
+                               Barber will provide his Service<br> at your Home.
+                            </h2>
+                            </h2>
+                            <h2 class="b511h21">Get ready to Look Great</h2>
+                            <a href="ht.html" class="b5a">
+                                <h2>Book Now</h2>
+                            </a>
+                            <img src="hair1.png" alt="" class="b5i1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="f">
+        <div class="f1">
+            <div class="f11">
+                <div class="f11h"><h2 class = "f11hh">Quick Links</h2></div>
+                <div class="f111"><a href="#" class="f111a">Our Services</a></div>
+                <div class="f111"><a href="#" class="f111a">About Us</a></div>
+                <div class="f111"><a href="#" class="f111a">Contact Us</a></div>
+                <div class="f111"><a href="#" class="f111a">Help</a></div>
+                <div class="f111"><a href="#" class="f111a">terms and Conditions</a></div>
+            </div>
+        </div>
+        <div class="f2">
+            <div class="f21">
+                <div class="f211">
+                    <h1 class="f211h1">Feel Looks</h1>
+                    <h3 class="f211h3">First impression always matters</h3>
+                </div>
+                <div class="f212">
+                    <a href="#" class="f21s1"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="f21s1"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="f21s1"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="f21s1"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var mybutton = document.getElementsByClassName("h12a");
+        
+        
+        
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          
+          document.documentElement.scrollTop = 1250;
+        }
+        </script>
+
+</body>
+
+</html>
